@@ -18,3 +18,107 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: var(--base-font-family);
+  font-variation-settings: 'wght' var(--base-font-weight);
+  color: var(--accent-color);
+  background-color: var(--background-color);
+
+  background-image:
+    repeating-linear-gradient(90deg, var(--background-grid-color) 0px 5px, transparent 5px 10px),
+    repeating-linear-gradient(var(--background-grid-color) 0px 5px, transparent 5px 10px),
+    linear-gradient( var(--background-gradient-color-start) 0.01%, var(--background-gradient-color-end) 100%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+/* ----------Header---------- */
+
+.header {
+  min-height: 327px;
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.header-title {
+  font-family: var(--accent-font-family);
+}
+
+.header-title-small {
+  font-family: var(--accent-font-family);
+  text-transform: uppercase;
+}
+
+.theme-menu {
+  font-family: var(--accent-font-family);
+}
+
+.theme-menu__button {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+
+
+/* ----------Main---------- */
+
+.content-cards {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 52px;
+  margin-top: 100px;
+}
+
+.card {
+  display: grid;
+  grid-auto-flow: row;
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.card-title {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.text {
+  margin-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.memories {
+  margin-top: 27px;
+}
+
+.card-button {
+  justify-self: right;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  width: 130px;
+  height: 38px;
+  border-bottom: 2px solid var(--accent-color);
+  font-family: var(--accent-font-family);
+}
+
+
+
+
+/* ----------Footer---------- */
+
+.footer {
+  margin-top: 50px;
+  border: 2px solid var(--accent-color);
+}
