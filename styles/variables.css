@@ -4,7 +4,8 @@
   --base-font-family: 'Inter-Variable', sans-serif;
   --accent-font-family: 'PressStart2P', sans-serif;
   --base-font-weight: 400;
-  --accent-font-weight: 400;
+  --card-title-font-weight: 700;
+  /* --accent-font-weight: 400; */
 
 
   --background-color: rgba(255, 255, 255, 1);

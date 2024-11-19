@@ -7,6 +7,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --base-font-weight: 400;
+    --card-title-font-weight: 700;
     --background-color: rgba(255, 255, 255, 1);
     --accent-color: rgba(0, 0, 0, 1);
 
@@ -17,6 +19,8 @@
 }
 
 .theme-light .page {
+  --base-font-weight: 400;
+  --card-title-font-weight: 700;
   --background-color: rgba(255, 255, 255, 1);
   --accent-color: rgba(0, 0, 0, 1);
 
@@ -27,6 +31,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root{
+    --base-font-weight: 465;
+    --card-title-font-weight: 785;
     --background-color: rgba(0, 0, 0, 1);
     --accent-color: rgba(0, 204, 20, 1);
 
@@ -37,6 +43,8 @@
 }
 
 .theme-dark .page {
+  --base-font-weight: 465;
+  --card-title-font-weight: 785;
   --background-color: rgba(0, 0, 0, 1);
   --accent-color: rgba(0, 204, 20, 1);
 
