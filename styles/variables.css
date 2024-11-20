@@ -5,7 +5,6 @@
   --accent-font-family: 'PressStart2P', sans-serif;
   --base-font-weight: 400;
   --card-title-font-weight: 700;
-  /* --accent-font-weight: 400; */
 
 
   --background-color: rgba(255, 255, 255, 1);
@@ -14,4 +13,6 @@
   --background-grid-color: #d3d3d3;
   --background-gradient-color-start: #e7e7e7;
   --background-gradient-color-end: #1a1a1a;
+
+  --theme-menu__button-hover-color: rgba(0, 0, 0, 0.6);
 }
