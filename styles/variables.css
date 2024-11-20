@@ -15,4 +15,6 @@
   --background-gradient-color-end: #1a1a1a;
 
   --theme-menu__button-hover-color: rgba(0, 0, 0, 0.6);
+
+  --button__text-color: var(--background-color);
 }
