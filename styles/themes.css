@@ -19,6 +19,8 @@
     --theme-menu__button-hover-color: rgba(0, 0, 0, 0.6);
 
     --button__text-color: var(--background-color);
+
+    --heart-contour-color: rgba(0, 0, 0, 1);
   }
 }
 
@@ -35,6 +37,8 @@
   --theme-menu__button-hover-color: rgba(0, 0, 0, 0.6);
 
   --button__text-color: var(--background-color);
+
+  --heart-contour-color: rgba(0, 0, 0, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,6 +55,8 @@
     --theme-menu__button-hover-color: rgba(0, 204, 20, 0.6);
 
     --button__text-color: var(--accent-color);
+
+    --heart-contour-color: rgba(0, 204, 20, 1);
   }
 }
 
@@ -67,5 +73,7 @@
   --theme-menu__button-hover-color: rgba(0, 204, 20, 0.6);
 
   --button__text-color: var(--accent-color);
+
+  --heart-contour-color: rgba(0, 204, 20, 1);
 }
 

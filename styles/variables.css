@@ -17,4 +17,10 @@
   --theme-menu__button-hover-color: rgba(0, 0, 0, 0.6);
 
   --button__text-color: var(--background-color);
+
+  --heart-contour-color: rgba(0, 0, 0, 1);
+  --heart-fill-color: rgba(255, 0, 0, 1);
+
+  --heart-main-body-color: transparent;
+  --heart-core-color: transparent;
 }
