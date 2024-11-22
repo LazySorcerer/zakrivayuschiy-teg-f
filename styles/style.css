@@ -201,7 +201,6 @@
 .card-image {
   width: 100%;
   height: 100%;
-  height: min-content;
   object-fit: contain;
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
@@ -435,7 +434,7 @@
 
 .dialog[open] {
   display: grid;
-  width: min-content;  
+  width: min-content;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   gap: 30px;
@@ -462,7 +461,7 @@
 
   .dialog[open] .button {
     width: 293px;
-  }  
+  }
 }
 
 .dialog-content {
