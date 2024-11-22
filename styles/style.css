@@ -17,19 +17,15 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-
-
-
   max-width: 700px;
   margin: 0 auto;
   font-family: var(--base-font-family);
   font-variation-settings: 'wght' var(--base-font-weight);
   color: var(--accent-color);
   background-color: var(--background-color);
-
   background-image:
-    repeating-linear-gradient(90deg, var(--background-grid-color) 0px 5px, transparent 5px 10px),
-    repeating-linear-gradient(var(--background-grid-color) 0px 5px, transparent 5px 10px),
+    repeating-linear-gradient(90deg, var(--background-grid-color) 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(var(--background-grid-color) 0px 2px, transparent 2px 4px),
     linear-gradient( var(--background-gradient-color-start) 0.01%, var(--background-gradient-color-end) 100%);
   background-attachment: fixed;
   background-size: cover;
@@ -58,13 +54,14 @@
   margin-top: 100px;
 }
 
-.header-title {
+.header-logo {
   font-family: var(--accent-font-family);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
   margin-top: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem)
 }
 
-.header-title-small {
+.header-title {
   font-family: var(--accent-font-family);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
@@ -168,7 +165,6 @@
 
 .text-over-image {
   position: absolute;
-  content: "";
   top: 23px;
   right: 11px;
   mix-blend-mode: hard-light;
@@ -267,78 +263,6 @@
   transition: border 0.3s ease;
 }
 
-.core {
-  fill: var(--heart-core-color);
-  transition: fill 0.3s 0.05s linear;
-}
-
-.main-body {
-  fill: var(--heart-main-body-color);
-  transition: fill 0.3s linear;
-}
-
-.contour {
-  fill: var(--heart-contour-color);
-  transition: fill 0.1s linear;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.card__icon-button:hover .core {
-  cursor: pointer;
-  fill: var(--accent-color);
-  transition: fill 0.3s linear;
-}
-
-.card__icon-button:hover .main-body {
-  cursor: pointer;
-  fill: var(--accent-color);
-  transition: fill 0.3s 0.05s linear;
-}
-
-.card__icon-button:active .core {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s linear;
-}
-
-.card__icon-button:active .main-body {
-  fill: var(--heart-fill-color);
-  transition: fill 0.3s 0.05s linear;
-}
-
-.card__icon-button:focus-visible {
-  outline: none;
-  border: 2px solid var(--accent-color);
-}
-
-.like-icon.is-liked {
-  .core {
-    fill: var(--heart-fill-color);
-    transition: fill 0.3s linear;
-  }
-
-  .main-body {
-    fill: var(--heart-fill-color);
-    transition: fill 0.3s 0.05s linear;
-  }
-
-  .contour {
-    fill: var(--heart-fill-color);
-    transition: fill 0.3s 0.06s linear;
-  }
-
-  .heart {
-    transform-origin: center;
-    animation: heart 0.3s 0.1s ease-in;
-  }
-
-  .sparks {
-    animation: sparks 0.3s 0.3s ease-in;
-  }
-}
-
 .button {
   position: relative;
   width: 130px;
@@ -409,7 +333,7 @@
 
 .floppy {
   color: var(--button__text-color);
-  z-index: 1;
+  z-index: 10;
   width: 28px;
   height: 28px;
   mix-blend-mode: difference;
@@ -428,6 +352,10 @@
   }
 }
 
+use {
+  width: 100%;
+  height: 100%;
+}
 
 
 
@@ -476,6 +404,7 @@
   width: 39px;
   height: 39px;
   color: var(--accent-color);
+  mix-blend-mode: normal;
 }
 
 .dialog[open]::backdrop {
